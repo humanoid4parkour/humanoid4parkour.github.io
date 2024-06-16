@@ -82,24 +82,24 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="./resources/"
+                <a href="./resources/humanoid-parkour-learning-paper.pdf"
                    class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper (Comming Soon)</span>
+                  <span>Paper</span>
                 </a>
               </span>
               <!-- arXiv Link. -->
-              <!-- <span class="link-block">
+              <span class="link-block">
                 <a href="https://arxiv.org"
                    class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv (Comming Soon)</span>
                 </a>
-              </span> -->
+              </span>
               <!-- OpenReview Link. -->
               <!-- <span class="link-block">
                 <a href="https://openreview.net/forum?id=uo937r5eTE"
@@ -252,8 +252,20 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Parkour is a grand challenge for legged locomotion, even for quadruped robots, requiring active perception and various maneuvers to overcome multiple challenging obstacles. Existing methods for humanoid locomotion either optimize robot trajectory for a single parkour track or train a reinforcement learning policy to walk with a significant amount of motion reference, not to mention implementing a general pipeline that performs parkour skills.
-            In this work, we propose a framework for learning an end-to-end vision-based whole-body-control parkour policy that overcomes multiple parkour skills without any motion prior. We show that using fractal noise terrain can still train a zero-shot sim-to-real policy for humanoid robots. The trained parkour policy can jump on a high platform, leap over hurdles, long gaps, and much more. We demonstrate that this unified framework trains an end-to-end policy that can autonomously select parkour skills at the speed of 1.0m/s and can be easily transferred to humanoid mobile manipulation tasks.
+            Parkour is a grand challenge for legged locomotion, even for quadruped
+            robots, requiring active perception and various maneuvers to overcome multiple
+            challenging obstacles. Existing methods for humanoid locomotion either optimize
+            a trajectory for a single parkour track or train a reinforcement learning policy only
+            to walk with a significant amount of motion references. In this work, we propose a
+            framework for learning an end-to-end vision-based whole-body-control parkour
+            policy for humanoid robots that overcomes multiple parkour skills without any
+            motion prior. Using the parkour policy, the humanoid robot can jump on a 0.42m
+            platform, leap over hurdles, 0.8m gaps, and much more. It can also run at 1.8m/s
+            in the wild and walk robustly on different terrains. We test our policy in indoor and
+            outdoor environments to demonstrate that it can autonomously select parkour skills
+            while following the rotation command of the joystick. We override the arm actions
+            and show that this framework can easily transfer to humanoid mobile manipulation
+            tasks. 
           </p>
         </div>
       </div>
